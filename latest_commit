@@ -1,0 +1,5 @@
+commit d098160da342dd28fbd97bb6d43672297deb9297
+Author: lins05 <linshuai2012@gmail.com>
+Date:   Sat Jun 8 15:12:35 2013 +0800
+
+    fixed upgrade sql for 1.7.0/sqlite3

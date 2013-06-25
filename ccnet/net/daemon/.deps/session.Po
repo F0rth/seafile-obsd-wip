@@ -1,0 +1,593 @@
+session.o session.o: ../common/session.c ../common/common.h \
+  ../../config.h /usr/include/unistd.h /usr/include/sys/types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/machine/endian.h /usr/include/sys/endian.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/select.h /usr/include/sys/time.h /usr/include/time.h \
+  /usr/include/sys/_time.h /usr/include/sys/unistd.h \
+  /usr/include/stdlib.h /usr/include/stdint.h /usr/include/errno.h \
+  /usr/include/sys/errno.h /usr/include/string.h /usr/include/limits.h \
+  /usr/include/sys/limits.h /usr/include/machine/limits.h \
+  /usr/include/sys/syslimits.h ../../include/ccnet/option.h \
+  /usr/include/stdio.h /usr/local/include/glib-2.0/glib.h \
+  /usr/local/include/glib-2.0/glib/galloca.h \
+  /usr/local/include/glib-2.0/glib/gtypes.h \
+  /usr/local/lib/glib-2.0/include/glibconfig.h \
+  /usr/local/include/glib-2.0/glib/gmacros.h /usr/include/stddef.h \
+  /usr/include/float.h /usr/include/machine/_float.h \
+  /usr/local/include/glib-2.0/glib/gversionmacros.h \
+  /usr/local/include/glib-2.0/glib/garray.h \
+  /usr/local/include/glib-2.0/glib/gasyncqueue.h \
+  /usr/local/include/glib-2.0/glib/gthread.h \
+  /usr/local/include/glib-2.0/glib/gatomic.h \
+  /usr/local/include/glib-2.0/glib/gerror.h /usr/include/stdarg.h \
+  /usr/local/include/glib-2.0/glib/gquark.h \
+  /usr/local/include/glib-2.0/glib/gbacktrace.h /usr/include/signal.h \
+  /usr/include/sys/signal.h /usr/include/machine/signal.h \
+  /usr/include/machine/trap.h /usr/include/sys/siginfo.h \
+  /usr/local/include/glib-2.0/glib/gbase64.h \
+  /usr/local/include/glib-2.0/glib/gbitlock.h \
+  /usr/local/include/glib-2.0/glib/gbookmarkfile.h \
+  /usr/local/include/glib-2.0/glib/gbytes.h \
+  /usr/local/include/glib-2.0/glib/gcharset.h \
+  /usr/local/include/glib-2.0/glib/gchecksum.h \
+  /usr/local/include/glib-2.0/glib/gconvert.h \
+  /usr/local/include/glib-2.0/glib/gdataset.h \
+  /usr/local/include/glib-2.0/glib/gdate.h \
+  /usr/local/include/glib-2.0/glib/gdatetime.h \
+  /usr/local/include/glib-2.0/glib/gtimezone.h \
+  /usr/local/include/glib-2.0/glib/gdir.h \
+  /usr/local/include/glib-2.0/glib/genviron.h \
+  /usr/local/include/glib-2.0/glib/gfileutils.h \
+  /usr/local/include/glib-2.0/glib/ggettext.h \
+  /usr/local/include/glib-2.0/glib/ghash.h \
+  /usr/local/include/glib-2.0/glib/glist.h \
+  /usr/local/include/glib-2.0/glib/gmem.h \
+  /usr/local/include/glib-2.0/glib/gnode.h \
+  /usr/local/include/glib-2.0/glib/ghmac.h \
+  /usr/local/include/glib-2.0/glib/gchecksum.h \
+  /usr/local/include/glib-2.0/glib/ghook.h \
+  /usr/local/include/glib-2.0/glib/ghostutils.h \
+  /usr/local/include/glib-2.0/glib/giochannel.h \
+  /usr/local/include/glib-2.0/glib/gmain.h \
+  /usr/local/include/glib-2.0/glib/gpoll.h \
+  /usr/local/include/glib-2.0/glib/gslist.h \
+  /usr/local/include/glib-2.0/glib/gstring.h \
+  /usr/local/include/glib-2.0/glib/gunicode.h \
+  /usr/local/include/glib-2.0/glib/gutils.h \
+  /usr/local/include/glib-2.0/glib/gkeyfile.h \
+  /usr/local/include/glib-2.0/glib/gmappedfile.h \
+  /usr/local/include/glib-2.0/glib/gmarkup.h \
+  /usr/local/include/glib-2.0/glib/gmessages.h \
+  /usr/local/include/glib-2.0/glib/goption.h \
+  /usr/local/include/glib-2.0/glib/gpattern.h \
+  /usr/local/include/glib-2.0/glib/gprimes.h \
+  /usr/local/include/glib-2.0/glib/gqsort.h \
+  /usr/local/include/glib-2.0/glib/gqueue.h \
+  /usr/local/include/glib-2.0/glib/grand.h \
+  /usr/local/include/glib-2.0/glib/gregex.h \
+  /usr/local/include/glib-2.0/glib/gscanner.h \
+  /usr/local/include/glib-2.0/glib/gsequence.h \
+  /usr/local/include/glib-2.0/glib/gshell.h \
+  /usr/local/include/glib-2.0/glib/gslice.h \
+  /usr/local/include/glib-2.0/glib/gspawn.h \
+  /usr/local/include/glib-2.0/glib/gstrfuncs.h \
+  /usr/local/include/glib-2.0/glib/gstringchunk.h \
+  /usr/local/include/glib-2.0/glib/gtestutils.h \
+  /usr/local/include/glib-2.0/glib/gthreadpool.h \
+  /usr/local/include/glib-2.0/glib/gtimer.h \
+  /usr/local/include/glib-2.0/glib/gtrashstack.h \
+  /usr/local/include/glib-2.0/glib/gtree.h \
+  /usr/local/include/glib-2.0/glib/gurifuncs.h \
+  /usr/local/include/glib-2.0/glib/gvarianttype.h \
+  /usr/local/include/glib-2.0/glib/gvariant.h \
+  /usr/local/include/glib-2.0/glib/gversion.h \
+  /usr/local/include/glib-2.0/glib/deprecated/gallocator.h \
+  /usr/local/include/glib-2.0/glib/deprecated/gcache.h \
+  /usr/local/include/glib-2.0/glib/deprecated/gcompletion.h \
+  /usr/local/include/glib-2.0/glib/deprecated/gmain.h \
+  /usr/local/include/glib-2.0/glib/deprecated/grel.h \
+  /usr/local/include/glib-2.0/glib/deprecated/gthread.h \
+  /usr/include/pthread.h /usr/include/sched.h ../../lib/utils.h \
+  /usr/local/include/glib-2.0/glib-object.h \
+  /usr/local/include/glib-2.0/gobject/gbinding.h \
+  /usr/local/include/glib-2.0/gobject/gobject.h \
+  /usr/local/include/glib-2.0/gobject/gtype.h \
+  /usr/local/include/glib-2.0/gobject/gvalue.h \
+  /usr/local/include/glib-2.0/gobject/gparam.h \
+  /usr/local/include/glib-2.0/gobject/gclosure.h \
+  /usr/local/include/glib-2.0/gobject/gsignal.h \
+  /usr/local/include/glib-2.0/gobject/gmarshal.h \
+  /usr/local/include/glib-2.0/gobject/gboxed.h \
+  /usr/local/include/glib-2.0/gobject/glib-types.h \
+  /usr/local/include/glib-2.0/gobject/genums.h \
+  /usr/local/include/glib-2.0/gobject/gparamspecs.h \
+  /usr/local/include/glib-2.0/gobject/gsourceclosure.h \
+  /usr/local/include/glib-2.0/gobject/gtypemodule.h \
+  /usr/local/include/glib-2.0/gobject/gtypeplugin.h \
+  /usr/local/include/glib-2.0/gobject/gvaluearray.h \
+  /usr/local/include/glib-2.0/gobject/gvaluetypes.h \
+  /usr/local/include/event2/util.h \
+  /usr/local/include/event2/event-config.h /usr/include/netdb.h \
+  /usr/include/sys/param.h /usr/include/machine/param.h \
+  /usr/include/netinet/in.h /usr/include/netinet6/in6.h \
+  /usr/include/sys/socket.h ../../include/ccnet/valid-check.h \
+  /usr/include/dirent.h /usr/include/sys/dirent.h /usr/include/sys/stat.h \
+  ../common/getgateway.h ../../lib/net.h /usr/include/arpa/inet.h \
+  /usr/include/sys/un.h /usr/include/net/if.h /usr/include/sys/queue.h \
+  /usr/include/sys/tree.h /usr/include/altq/if_altq.h \
+  /usr/include/net/if_arp.h /usr/include/netinet/tcp.h \
+  /usr/local/include/evutil.h ../../lib/rsa.h /usr/include/openssl/pem.h \
+  /usr/include/openssl/e_os2.h /usr/include/openssl/opensslconf.h \
+  /usr/include/openssl/bio.h /usr/include/openssl/crypto.h \
+  /usr/include/openssl/stack.h /usr/include/openssl/safestack.h \
+  /usr/include/openssl/opensslv.h /usr/include/openssl/ossl_typ.h \
+  /usr/include/openssl/symhacks.h /usr/include/openssl/evp.h \
+  /usr/include/openssl/objects.h /usr/include/openssl/obj_mac.h \
+  /usr/include/openssl/asn1.h /usr/include/openssl/bn.h \
+  /usr/include/openssl/x509.h /usr/include/openssl/buffer.h \
+  /usr/include/openssl/ec.h /usr/include/openssl/ecdsa.h \
+  /usr/include/openssl/ecdh.h /usr/include/openssl/rsa.h \
+  /usr/include/openssl/dsa.h /usr/include/openssl/dh.h \
+  /usr/include/openssl/sha.h /usr/include/openssl/x509_vfy.h \
+  /usr/include/openssl/lhash.h /usr/include/openssl/pkcs7.h \
+  /usr/include/openssl/pem2.h /usr/include/openssl/rand.h \
+  /usr/include/openssl/err.h ../common/ccnet-config.h ../common/session.h \
+  /usr/local/include/event2/event.h \
+  /usr/local/include/event2/event_struct.h \
+  /usr/local/include/event2/keyvalq_struct.h \
+  /usr/local/include/glib-2.0/glib/gstdio.h \
+  /usr/local/include/glib-2.0/glib/gprintf.h \
+  ../../include/ccnet/ccnet-session-base.h ../common/processor.h \
+  ../../include/ccnet/status-code.h ../common/list.h ../common/ccnet-db.h \
+  ../../lib/db.h /usr/include/sqlite3.h ../../include/ccnet/job-mgr.h \
+  ../../lib/ccnet-object.h ../common/peer.h ../common/peer-mgr.h \
+  ../common/perm-mgr.h ../common/packet-io.h ../../include/ccnet/packet.h \
+  /usr/local/include/event2/event_compat.h \
+  /usr/local/include/event2/buffer.h /usr/include/sys/uio.h \
+  /usr/local/include/event2/buffer_compat.h \
+  /usr/local/include/event2/bufferevent.h \
+  /usr/local/include/event2/bufferevent_compat.h ../common/connect-mgr.h \
+  ../../include/ccnet/timer.h ../common/message.h \
+  ../common/message-manager.h ../common/algorithms.h \
+  ../common/proc-factory.h ../common/log.h
+
+../common/common.h:
+
+../../config.h:
+
+/usr/include/unistd.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/sys/endian.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/machine/cdefs.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/_time.h:
+
+/usr/include/sys/unistd.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/stdint.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/errno.h:
+
+/usr/include/string.h:
+
+/usr/include/limits.h:
+
+/usr/include/sys/limits.h:
+
+/usr/include/machine/limits.h:
+
+/usr/include/sys/syslimits.h:
+
+../../include/ccnet/option.h:
+
+/usr/include/stdio.h:
+
+/usr/local/include/glib-2.0/glib.h:
+
+/usr/local/include/glib-2.0/glib/galloca.h:
+
+/usr/local/include/glib-2.0/glib/gtypes.h:
+
+/usr/local/lib/glib-2.0/include/glibconfig.h:
+
+/usr/local/include/glib-2.0/glib/gmacros.h:
+
+/usr/include/stddef.h:
+
+/usr/include/float.h:
+
+/usr/include/machine/_float.h:
+
+/usr/local/include/glib-2.0/glib/gversionmacros.h:
+
+/usr/local/include/glib-2.0/glib/garray.h:
+
+/usr/local/include/glib-2.0/glib/gasyncqueue.h:
+
+/usr/local/include/glib-2.0/glib/gthread.h:
+
+/usr/local/include/glib-2.0/glib/gatomic.h:
+
+/usr/local/include/glib-2.0/glib/gerror.h:
+
+/usr/include/stdarg.h:
+
+/usr/local/include/glib-2.0/glib/gquark.h:
+
+/usr/local/include/glib-2.0/glib/gbacktrace.h:
+
+/usr/include/signal.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/machine/signal.h:
+
+/usr/include/machine/trap.h:
+
+/usr/include/sys/siginfo.h:
+
+/usr/local/include/glib-2.0/glib/gbase64.h:
+
+/usr/local/include/glib-2.0/glib/gbitlock.h:
+
+/usr/local/include/glib-2.0/glib/gbookmarkfile.h:
+
+/usr/local/include/glib-2.0/glib/gbytes.h:
+
+/usr/local/include/glib-2.0/glib/gcharset.h:
+
+/usr/local/include/glib-2.0/glib/gchecksum.h:
+
+/usr/local/include/glib-2.0/glib/gconvert.h:
+
+/usr/local/include/glib-2.0/glib/gdataset.h:
+
+/usr/local/include/glib-2.0/glib/gdate.h:
+
+/usr/local/include/glib-2.0/glib/gdatetime.h:
+
+/usr/local/include/glib-2.0/glib/gtimezone.h:
+
+/usr/local/include/glib-2.0/glib/gdir.h:
+
+/usr/local/include/glib-2.0/glib/genviron.h:
+
+/usr/local/include/glib-2.0/glib/gfileutils.h:
+
+/usr/local/include/glib-2.0/glib/ggettext.h:
+
+/usr/local/include/glib-2.0/glib/ghash.h:
+
+/usr/local/include/glib-2.0/glib/glist.h:
+
+/usr/local/include/glib-2.0/glib/gmem.h:
+
+/usr/local/include/glib-2.0/glib/gnode.h:
+
+/usr/local/include/glib-2.0/glib/ghmac.h:
+
+/usr/local/include/glib-2.0/glib/gchecksum.h:
+
+/usr/local/include/glib-2.0/glib/ghook.h:
+
+/usr/local/include/glib-2.0/glib/ghostutils.h:
+
+/usr/local/include/glib-2.0/glib/giochannel.h:
+
+/usr/local/include/glib-2.0/glib/gmain.h:
+
+/usr/local/include/glib-2.0/glib/gpoll.h:
+
+/usr/local/include/glib-2.0/glib/gslist.h:
+
+/usr/local/include/glib-2.0/glib/gstring.h:
+
+/usr/local/include/glib-2.0/glib/gunicode.h:
+
+/usr/local/include/glib-2.0/glib/gutils.h:
+
+/usr/local/include/glib-2.0/glib/gkeyfile.h:
+
+/usr/local/include/glib-2.0/glib/gmappedfile.h:
+
+/usr/local/include/glib-2.0/glib/gmarkup.h:
+
+/usr/local/include/glib-2.0/glib/gmessages.h:
+
+/usr/local/include/glib-2.0/glib/goption.h:
+
+/usr/local/include/glib-2.0/glib/gpattern.h:
+
+/usr/local/include/glib-2.0/glib/gprimes.h:
+
+/usr/local/include/glib-2.0/glib/gqsort.h:
+
+/usr/local/include/glib-2.0/glib/gqueue.h:
+
+/usr/local/include/glib-2.0/glib/grand.h:
+
+/usr/local/include/glib-2.0/glib/gregex.h:
+
+/usr/local/include/glib-2.0/glib/gscanner.h:
+
+/usr/local/include/glib-2.0/glib/gsequence.h:
+
+/usr/local/include/glib-2.0/glib/gshell.h:
+
+/usr/local/include/glib-2.0/glib/gslice.h:
+
+/usr/local/include/glib-2.0/glib/gspawn.h:
+
+/usr/local/include/glib-2.0/glib/gstrfuncs.h:
+
+/usr/local/include/glib-2.0/glib/gstringchunk.h:
+
+/usr/local/include/glib-2.0/glib/gtestutils.h:
+
+/usr/local/include/glib-2.0/glib/gthreadpool.h:
+
+/usr/local/include/glib-2.0/glib/gtimer.h:
+
+/usr/local/include/glib-2.0/glib/gtrashstack.h:
+
+/usr/local/include/glib-2.0/glib/gtree.h:
+
+/usr/local/include/glib-2.0/glib/gurifuncs.h:
+
+/usr/local/include/glib-2.0/glib/gvarianttype.h:
+
+/usr/local/include/glib-2.0/glib/gvariant.h:
+
+/usr/local/include/glib-2.0/glib/gversion.h:
+
+/usr/local/include/glib-2.0/glib/deprecated/gallocator.h:
+
+/usr/local/include/glib-2.0/glib/deprecated/gcache.h:
+
+/usr/local/include/glib-2.0/glib/deprecated/gcompletion.h:
+
+/usr/local/include/glib-2.0/glib/deprecated/gmain.h:
+
+/usr/local/include/glib-2.0/glib/deprecated/grel.h:
+
+/usr/local/include/glib-2.0/glib/deprecated/gthread.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+../../lib/utils.h:
+
+/usr/local/include/glib-2.0/glib-object.h:
+
+/usr/local/include/glib-2.0/gobject/gbinding.h:
+
+/usr/local/include/glib-2.0/gobject/gobject.h:
+
+/usr/local/include/glib-2.0/gobject/gtype.h:
+
+/usr/local/include/glib-2.0/gobject/gvalue.h:
+
+/usr/local/include/glib-2.0/gobject/gparam.h:
+
+/usr/local/include/glib-2.0/gobject/gclosure.h:
+
+/usr/local/include/glib-2.0/gobject/gsignal.h:
+
+/usr/local/include/glib-2.0/gobject/gmarshal.h:
+
+/usr/local/include/glib-2.0/gobject/gboxed.h:
+
+/usr/local/include/glib-2.0/gobject/glib-types.h:
+
+/usr/local/include/glib-2.0/gobject/genums.h:
+
+/usr/local/include/glib-2.0/gobject/gparamspecs.h:
+
+/usr/local/include/glib-2.0/gobject/gsourceclosure.h:
+
+/usr/local/include/glib-2.0/gobject/gtypemodule.h:
+
+/usr/local/include/glib-2.0/gobject/gtypeplugin.h:
+
+/usr/local/include/glib-2.0/gobject/gvaluearray.h:
+
+/usr/local/include/glib-2.0/gobject/gvaluetypes.h:
+
+/usr/local/include/event2/util.h:
+
+/usr/local/include/event2/event-config.h:
+
+/usr/include/netdb.h:
+
+/usr/include/sys/param.h:
+
+/usr/include/machine/param.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/netinet6/in6.h:
+
+/usr/include/sys/socket.h:
+
+../../include/ccnet/valid-check.h:
+
+/usr/include/dirent.h:
+
+/usr/include/sys/dirent.h:
+
+/usr/include/sys/stat.h:
+
+../common/getgateway.h:
+
+../../lib/net.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/sys/un.h:
+
+/usr/include/net/if.h:
+
+/usr/include/sys/queue.h:
+
+/usr/include/sys/tree.h:
+
+/usr/include/altq/if_altq.h:
+
+/usr/include/net/if_arp.h:
+
+/usr/include/netinet/tcp.h:
+
+/usr/local/include/evutil.h:
+
+../../lib/rsa.h:
+
+/usr/include/openssl/pem.h:
+
+/usr/include/openssl/e_os2.h:
+
+/usr/include/openssl/opensslconf.h:
+
+/usr/include/openssl/bio.h:
+
+/usr/include/openssl/crypto.h:
+
+/usr/include/openssl/stack.h:
+
+/usr/include/openssl/safestack.h:
+
+/usr/include/openssl/opensslv.h:
+
+/usr/include/openssl/ossl_typ.h:
+
+/usr/include/openssl/symhacks.h:
+
+/usr/include/openssl/evp.h:
+
+/usr/include/openssl/objects.h:
+
+/usr/include/openssl/obj_mac.h:
+
+/usr/include/openssl/asn1.h:
+
+/usr/include/openssl/bn.h:
+
+/usr/include/openssl/x509.h:
+
+/usr/include/openssl/buffer.h:
+
+/usr/include/openssl/ec.h:
+
+/usr/include/openssl/ecdsa.h:
+
+/usr/include/openssl/ecdh.h:
+
+/usr/include/openssl/rsa.h:
+
+/usr/include/openssl/dsa.h:
+
+/usr/include/openssl/dh.h:
+
+/usr/include/openssl/sha.h:
+
+/usr/include/openssl/x509_vfy.h:
+
+/usr/include/openssl/lhash.h:
+
+/usr/include/openssl/pkcs7.h:
+
+/usr/include/openssl/pem2.h:
+
+/usr/include/openssl/rand.h:
+
+/usr/include/openssl/err.h:
+
+../common/ccnet-config.h:
+
+../common/session.h:
+
+/usr/local/include/event2/event.h:
+
+/usr/local/include/event2/event_struct.h:
+
+/usr/local/include/event2/keyvalq_struct.h:
+
+/usr/local/include/glib-2.0/glib/gstdio.h:
+
+/usr/local/include/glib-2.0/glib/gprintf.h:
+
+../../include/ccnet/ccnet-session-base.h:
+
+../common/processor.h:
+
+../../include/ccnet/status-code.h:
+
+../common/list.h:
+
+../common/ccnet-db.h:
+
+../../lib/db.h:
+
+/usr/include/sqlite3.h:
+
+../../include/ccnet/job-mgr.h:
+
+../../lib/ccnet-object.h:
+
+../common/peer.h:
+
+../common/peer-mgr.h:
+
+../common/perm-mgr.h:
+
+../common/packet-io.h:
+
+../../include/ccnet/packet.h:
+
+/usr/local/include/event2/event_compat.h:
+
+/usr/local/include/event2/buffer.h:
+
+/usr/include/sys/uio.h:
+
+/usr/local/include/event2/buffer_compat.h:
+
+/usr/local/include/event2/bufferevent.h:
+
+/usr/local/include/event2/bufferevent_compat.h:
+
+../common/connect-mgr.h:
+
+../../include/ccnet/timer.h:
+
+../common/message.h:
+
+../common/message-manager.h:
+
+../common/algorithms.h:
+
+../common/proc-factory.h:
+
+../common/log.h:

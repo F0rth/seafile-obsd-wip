@@ -1,0 +1,11 @@
+prefix=(DESTDIR)/opt
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libccnet
+Description: Client library for accessing ccnet service.
+Version: 1.3.4
+Libs: -L${libdir} -lccnet -L/opt/lib
+Cflags: -I${includedir} -I/opt/include/searpc
+Requires: gobject-2.0 glib-2.0

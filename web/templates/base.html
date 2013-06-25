@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>${_("Seafile Client")}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/ui-lightness/jquery-ui-1.8.16.custom.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/ccnet.css?t=2" />
+    <link rel="icon" type="image/png" href="/static/img/favicon.png?t=3" />
+    <script type="text/javascript" src="/static/js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.simplemodal.1.4.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-jtemplates.js"></script>
+</head>
+
+<%
+     from seaserv import ccnet_rpc
+     sinfo = ccnet_rpc.get_session_info()
+%>
+
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div id="header-inner" class="ovhd">
+            <div id="lang-info" class="fright">
+                % if settings.SHOW_SYSTEM:
+                <a href="/procs/">${_("System")}</a>
+                % endif
+                <a href=${"/i18n/?prev=" + web_ctx.fullpath} >
+                    % if lang == 'zh_CN':
+                    English
+                    % else:
+                    中文
+                    % endif
+                </a>
+            </div>
+            <div class="fleft">
+                <span id="client-note" class="fleft">${_("Seafile Client")}</span>
+                <ul id="nav" class="fleft">
+                    <li class="library-item">
+                    <a href="/repos/">${_("Libraries")}</a>
+                    </li>
+                    <li class="settings-item">
+                    <a href="/settings/">${_("Settings")}</a>
+                    </li>
+                    <li class="help-item">
+                    % if lang == 'zh_CN':
+                    <a href=${settings.DEFAULT_HELP_WEB}>${_("Help")}</a>
+                    % else:
+                    <a href=${settings.DEFAULT_HELP_WEB_EN}>${_("Help")}</a>
+                    % endif
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="ovhd">
+        ${self.main_panel()}
+    </div>
+    <%def name="main_panel()"></%def>
+    <div id="footer">
+        <p>Copyright © 2013 Seafile Ltd. <span class="version">${_("Version:")} ${seafile_version}</span></p>
+    </div>
+</div><!-- wrapper -->
+<script type="text/javascript" src="/static/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/static/js/utils.js"></script>
+<%def name="js()"></%def>
+${self.js()}
+</body>
+</html>

@@ -1,0 +1,5 @@
+commit 6b38946ac22fbdd9f221a11f50c6d8b1995f5f55
+Author: lins05 <linshuai2012@gmail.com>
+Date:   Sun Jun 9 14:09:18 2013 +0800
+
+    [python] use float for ccnet message "ctime"
